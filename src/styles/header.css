@@ -1,80 +1,172 @@
-header {
-    display: flex;
-    height: 830px;
-    text-align: center;
-    background-color: black;
-    color: white;
-    justify-content: center;
-    justify-items: center;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 900;
-    font-size: 40px;
-    letter-spacing: 0.7em;
+.backgroundHeader {
+	align-items: left;
+	top: 0px;
+	background: url("/src/image/background\ \(1\).png");
+	/* background-position: 20%;  */
+	background-size: cover;
+	flex-direction: row;
+	display: flex;
+	height: 680px;
+	align-content: center;
+	justify-content: space-between;
+}
+
+.dark .backgroundHeader {
+	background: none;
+	background-color: #212120;
+	height: 840px;
+}
+
+nav {
+	height: 100px;
+	left: 0px;
+	top: 0px;
+	background: rgba(255, 255, 255, 0.25);
+	backdrop-filter: blur(2px);
+	display: flex;
+	justify-content: space-between;
+	position: fixed;
+	z-index: 8;
+	filter: drop-shadow(0px 1px 5px rgba(0, 0, 0, 0.05));
+	align-content: center;
+	align-items: center;
+	flex-direction: row;
+}
+
+.dark nav {
+	background: rgba(53, 52, 52, 0.25);
+	filter: drop-shadow(0px 1px 5px rgba(0, 0, 0, 0.15));
+}
+
+.navegation {
+	width: 100%;
+	height: 82px;
+	z-index: 9;
+	display: flex;
+	align-content: center;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+.logo {
+	align-items: center;
+	justify-content: flex-start;
+	align-content: center;
+}
+
+.navegation a {
+	width: auto;
+	padding: 10px;
+	margin-left: 20px;
+	top: 0px;
+	font-family: "Darker Grotesque";
+	font-style: normal;
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 49px;
+	letter-spacing: 0.03em;
+	text-transform: capitalize;
+	text-decoration: none;
+	color: #797676;
+}
+
+.dark .navegation a {
+	color: var(--cor-text-h2-dark);
+}
+
+.navegation li {
+	display: inline-block;
+	cursor: pointer;
+	position: relative;
+	font-weight: bold;
+}
+
+.navegation li span {
+	position: relative;
+}
+
+.navegation li span:before {
+	content: "";
+	width: 0;
+	height: 2px;
+	background: #cdbcc9;
+	bottom: -3px;
+	left: 50%;
+	position: absolute;
+	-webkit-transition: all 0.2s ease-in-out;
+	-moz-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+}
+
+.navegation li:hover span:before {
+	width: 100%;
+	left: 0;
+	-webkit-transition: all 0.2s ease-in-out;
+	-moz-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+}
+
+.navegation li.active span:before {
+	width: 100%;
+	left: 0;
+}
+
+.tgb {
+	display: flex;
+    width: auto;
+    height: auto;
+    padding: 3px;
+    background-color: white;
+    margin: 0px 50px 0px 20px;
+    border-radius: 100px;
+    cursor: pointer;
+    transition: all 0.5s ease-out;
+    flex-direction: row;
     align-content: center;
+    justify-content: flex-end;
     align-items: center;
 }
-.scrolled{
-	color: red;
-	cursor: pointer;
-	top: 880px;
-	transform: translate3d(0, 0, 0) scale(1);
+
+.dark .tgb {
+	background-color: var(--cor-icons-dark);
+	transition: all 0.5s ease-out;
 }
 
-.title {
-	color: red;
+.dark {
+	overflow-x: hidden;
 }
-.down-arr {
-	font-size: 2rem;
-	padding: 0 20px 20px 20px;
-	z-index: 1;
-	color: blue;
-  }
 
-#main {
-	margin-top:1500px;
-	position: absolute;
-	background-color: beige;
-  }
-  .navbar {
-	padding: 0;
-  }
-  
-  .navbar ul {
-	margin: 0;
-	padding: 0;
+.tgs {
+	margin-top: 0px;
+	width: 30px;
+	height: 30px;
+	font-size: 20px;
+	background-color: #87ceeb;
+	border-radius: 100px;
 	display: flex;
-	list-style: none;
+	float: right;
+	text-align: center;
+	justify-content: center;
+	flex-direction: row;
+	align-content: center;
 	align-items: center;
-  }
-  
-  .navbar li {
-	position: relative;
-  }
-  
-  .navbar a,
-  .navbar a:focus {
+}
+
+.tgg {
+	width: 30px;
+	height: 30px;
+	font-size: 25px;
+	background-color: #fddb73;
+	box-shadow: 0px 0px 5px var(--cor-principal);
+	border: 1px solid var(--cor-borda-principal);
+	border-radius: 100px;
 	display: flex;
+	float: left;
+	text-align: center;
+	justify-content: center;
+	flex-direction: row;
+	align-content: center;
 	align-items: center;
-	justify-content: space-between;
-	padding: 10px 0 10px 30px;
-	font-family: "Poppins", sans-serif;
-	font-size: 14px;
-	font-weight: 500;
-	color: #7e7d7d;
-	white-space: nowrap;
-	transition: 0.3s;
-  }
-  
-  .navbar a i,
-  .navbar a:focus i {
-	font-size: 12px;
-	line-height: 0;
-	margin-left: 5px;
-  }
-  
-  .navbar a:hover,
-  .navbar .active,
-  .navbar .active:focus,
-  .navbar li:hover>a {
-	color: #b8a07e;
-  }
+}
