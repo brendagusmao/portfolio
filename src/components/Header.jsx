@@ -5,6 +5,7 @@ import { HiSun } from "react-icons/hi";
 import { BsFillMoonStarsFill } from "react-icons/bs";
 import '../styles/header.css'
 import Logo from './Logo';
+import { Maquina } from './maquinadeescrever';
 
 function Header() {
    const { lightMode, setLightMode } = useContext(MyContext);
@@ -45,6 +46,20 @@ function Header() {
             }
         </div>
       </nav>
+       <div className="gradient" />
+        <div className="sidebar">
+          <h2>
+          Hello, World! i' am
+          </h2>
+          <h1><Maquina text="Brenda Gusmão" delay={1200} /></h1>
+          <h3>developer 
+          <div className="animated-info">
+               <span className="animated-item">Full Stack</span>
+               <span className="animated-item">Web</span>
+               <span className="animated-item">software</span>
+            </div>
+             </h3>
+          </div>
      </header>
   );
 }
