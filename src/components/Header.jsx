@@ -1,14 +1,33 @@
 import React from 'react';
-import { useContext } from 'react';
+import { useContext, useEffect, useState } from 'react';
 import MyContext from '../context/MyContext';
 import { HiSun } from "react-icons/hi";
-import { BsFillMoonStarsFill } from "react-icons/bs";
+import { BsFillMoonStarsFill, BsFillGridFill, BsChevronContract } from "react-icons/bs";
+import { SiAboutdotme } from "react-icons/si";
+import { RiPagesFill } from "react-icons/ri";
+import { MdPermContactCalendar, MdOutlineAutoGraph } from "react-icons/md";
 import '../styles/header.css'
 import Logo from './Logo';
 import { Maquina } from './maquinadeescrever';
 
 function Header() {
    const { lightMode, setLightMode } = useContext(MyContext);
+   const [menuState, setMenuState] = useState('closed');
+ 
+
+   function toggleMenu() {
+     setMenuState(menuState === 'closed' ? 'open' : 'closed');
+   }
+ 
+   useEffect(() => {
+     const nav = document.querySelector('.toggle');
+ 
+     if (menuState === 'open') {
+       nav.style.display = 'flex';
+     } else {
+       nav.style.display = 'none';
+     }
+   }, [menuState]);
 
    const select = (el, all = false) => {
       el = el.trim()
@@ -31,6 +50,19 @@ function Header() {
   // onClick={scrollto}
   return  ( 
      <header className="container-fluid backgroundHeader">
+        <div onClick={toggleMenu} className="buttontoggle">
+            {menuState === 'closed' ? <BsFillGridFill className='hamburger' /> : <BsChevronContract className='hamburger' />}
+        </div>
+          {/* Menu Moblie */}
+          <div className="toggle">
+            <ul>
+            <li><SiAboutdotme className="icontoggle" /><a onClick={toggleMenu} href="#about">sobre</a></li>
+            <li><RiPagesFill className="icontoggle" /><a onClick={toggleMenu} href="#projects">projetos</a></li>
+            <li><MdPermContactCalendar className="icontoggle" /><a onClick={toggleMenu} href="#contact">contato</a></li>
+            <li><MdOutlineAutoGraph className="icontoggle" /><a onClick={toggleMenu} href="#skills">Skills</a></li>
+            </ul>
+          </div>
+          {/* Menu Moblie */}
       <nav className="container-fluid">
       <h1 id="title"> <Logo /></h1>
        <div className="navegation">
