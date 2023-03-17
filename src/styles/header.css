@@ -2,6 +2,9 @@
 	align-items: left;
 	top: 0px;
 	background: linear-gradient(90deg, #d5c7f0, #d5c7f0d0, #f4eeff);
+	background-image: url(https://media.istockphoto.com/id/1179215860/vector/light-pastel-background-diffused-white-purple-pink-turquoise-hues-gentle-tones-soft-blurred.jpg?s=170667a&w=0&k=20&c=cPbC_ZwF-X3i8EwL1l8U-qy5Ysa91IHHETxHJmbf-a8=);
+		/* https://images.pexels.com/photos/7130555/pexels-photo-7130555.jpeg?cs=srgb&dl=pexels-codioful-%28formerly-gradienta%29-7130555.jpg&fm=jpg); */
+	background-size: cover;
 	background-color: #f4eeff;
 	flex-direction: row;
 	display: flex;
@@ -35,8 +38,9 @@
 
 .dark .backgroundHeader {
 	height: 680px;
-	background: linear-gradient(90deg, #424874, #32365a, #32365a);
-	background-color: #424874;
+	background-image: url(https://img.freepik.com/premium-vector/beautiful-purple-color-gradient-background_492281-1193.jpg);
+	/* background: linear-gradient(90deg, #424874, #32365a, #32365a); */
+	/* background-color: #424874; */
 }
 
 nav {
@@ -211,7 +215,7 @@ nav {
 	font-size: 5.3em;
 	margin-top: 0.1em;
 	font-weight: 800;
-	color: var(--cor-text-h1);
+	color: #282b46;
 	text-shadow: 1px 1px 1px #dcd6f7;
 	z-index: 1;
 }
@@ -226,7 +230,8 @@ nav {
 	text-transform: uppercase;
 	position: absolute;
 	letter-spacing: 0.05em;
-	color: #363062;
+	color: #5c2ab9;
+	text-shadow: 1px 1px 1px #a38ffc;
 }
 
 .sidebar h3 {
@@ -249,10 +254,6 @@ nav {
 	color: var(--cor-text-h2-dark);
 }
 
-@font-face {
-	font-family: Recoleta;
-	src: url(./fontes/Recoleta-Bold.ttf);
-}
 
 @keyframes rotate {
 	0% {
@@ -300,7 +301,7 @@ nav {
 }
 
 .animated-item {
-	color: #6130bb;
+	color: #5c2ab9;
 	font-size: 25px;
 	line-height: inherit;
 	display: block;
@@ -359,7 +360,7 @@ nav {
 	z-index: 9;
 	position: fixed;
 	display: none;
-	margin: 30px 0px 0px 350px;
+	margin: 26px 0px 0px 340px;
 }
 
 .dark .buttontoggle {
@@ -475,12 +476,12 @@ nav {
 	.sidebar h3 {
 		font-size: 22px;
 		margin-top: 15.90em;
-		margin-left: 30px;
+		margin-left: 27px;
 	}
 	.animated-info {
-		max-width: 100%;
+		max-width: 10%;
 		position: relative;
-		text-align: left;
+		text-align: center;
 		z-index: 1;
 	}
 	.animated-item {
@@ -492,7 +493,35 @@ nav {
 		position: absolute;
 		top: 0;
 		right: 0;
-		left: 15px;
+		left: 1px;
 		animation: BottomTotop 6s linear infinite 0s;
+	}
+}
+@media screen and (max-width: 414px){
+	.backgroundHeader {
+		height: 900px;
+	}
+	.gradient {
+		width: 250px;
+		height: 250px;
+		filter: blur(calc(250px / 5));
+		margin: 350px 0px 0px 50px;
+		opacity: 0.5;
+	}
+}
+@media screen and (max-width: 375px){
+	.backgroundHeader {
+		height: 670px;
+	}
+	.gradient {
+		margin: 300px 0px 0px 50px;
+	}
+	.buttontoggle {
+		margin: 26px 0px 0px 300px;
+	}
+}
+@media screen and (max-width: 360px){
+	.backgroundHeader {
+		height: 740px;
 	}
 }
