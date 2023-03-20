@@ -525,7 +525,10 @@ nav {
 	color: #15426e;
 }
 @media screen and (max-width: 768px) {
-
+	.backgroundHeader .overlay {
+		position: absolute;
+		height: 100%;
+	}
 	.sidebar {
 		margin-left: 0em;
 	}
@@ -543,11 +546,13 @@ nav {
 
 	.backgroundHeader {
 		width: 100%;
+		height: 100%;
 	}
 
 	nav {
 		width: 100%;
 		height: 80px;
+		background: rgba(255, 255, 255, 0);
 	}
 
 	.navegation {
@@ -587,7 +592,6 @@ nav {
 	}
 
 	.animated-item {
-		color: #6130bb;
 		font-size: 22px;
 		line-height: inherit;
 		display: block;
@@ -602,7 +606,11 @@ nav {
 
 @media screen and (max-width: 414px) {
 	.backgroundHeader {
-		height: 900px;
+		height: 800px;
+	}
+
+	.backgroundHeader .overlay {
+		height: 800px;
 	}
 
 	.gradient {
