@@ -30,7 +30,7 @@ body {
 	src: url(./fontes/Recoleta-Bold.ttf);
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Darker+Grotesque:wght@700&family=Montserrat+Subrayada&family=Montserrat:wght@400;500;600;800&family=Mulish:wght@400;800&family=Nanum+Myeongjo:wght@700&family=Playfair+Display:ital,wght@0,500;1,600&family=Poppins&family=Quicksand:wght@500&family=Tilt+Warp&family=Work+Sans:wght@700&family=Yanone+Kaffeesatz&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Darker+Grotesque:wght@700&family=Montserrat+Subrayada&family=Montserrat:wght@400;500;600;800&family=Mulish:wght@400;800&family=Nanum+Myeongjo:wght@700&family=Playfair+Display:ital,wght@0,500;1,600&family=Poppins:wght@400;700;800;900&family=Quicksand:wght@500&family=Tilt+Warp&family=Work+Sans:wght@700&family=Yanone+Kaffeesatz&display=swap');
 
 h1, h2, h3, h4, h5, h6 {
   line-height: 1.4;

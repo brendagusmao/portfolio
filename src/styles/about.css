@@ -18,7 +18,7 @@
 
 .abouttitle h3 {
     font-size: 30px;
-    font-weight: bold;
+    font-weight: 800;
 }
 
 .abouttitle {
@@ -92,6 +92,11 @@
 }
 
 @media screen and (max-width: 768px) {
+	.abouttitle h3 {
+		font-size: 25px;
+		font-weight: 800;
+	}
+
 	.background {
 		height: 896px;
 	}

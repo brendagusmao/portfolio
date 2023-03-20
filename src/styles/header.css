@@ -92,7 +92,7 @@
 }
 
 nav {
-	height: 100px;
+	height: 85px;
 	left: 0px;
 	top: 0px;
 	background: rgba(255, 255, 255, 0.071);
@@ -110,7 +110,7 @@ nav {
 }
 
 .dark nav {
-	background: rgba(53, 52, 52, 0.078);
+	background: rgba(53, 52, 52, 0.152);
 	filter: drop-shadow(0px 1px 5px rgba(0, 0, 0, 0.15));
 }
 
@@ -133,12 +133,12 @@ nav {
 .navegation a {
 	width: auto;
 	padding: 10px;
-	margin-left: 10px;
+	margin-left: 0px;
 	top: 0px;
 	font-family: Poppins;
 	font-style: normal;
-	font-weight: 800;
-	font-size: 1.3em;
+	font-weight: 600;
+	font-size: 1.1em;
 	line-height: auto;
 	letter-spacing: 0.03em;
 	text-transform: capitalize;
@@ -149,13 +149,14 @@ nav {
 
 .dark .navegation a {
 	color: var(--cor-text-h2-dark);
+	text-shadow: 1px 1px 1px solid rgba(0, 0, 0, 0.841);
 }
 
 .navegation li {
 	display: inline-block;
 	cursor: pointer;
 	position: relative;
-	font-weight: bold;
+	font-weight: 600;
 }
 
 .navegation li span {
@@ -166,7 +167,7 @@ nav {
 	content: "";
 	width: 0;
 	height: 2px;
-	background: #cdbcc9;
+	background: rgb(251, 119, 188);
 	bottom: -3px;
 	left: 50%;
 	position: absolute;
@@ -190,16 +191,17 @@ nav {
 	left: 0;
 }
 
-.active {
-	color: #6130bb;
-}
 
 .navegation .active {
-	color: #6130bb;
+	color: rgb(207, 101, 156);
+}
+
+.dark .navegation .active {
+	color: rgb(255, 221, 239);
 }
 
 .navegation li:active span:active {
-	color: #6130bb;
+	color: rgb(251, 119, 188);
 }
 
 .tgb {
