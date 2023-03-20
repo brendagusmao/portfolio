@@ -427,7 +427,7 @@ nav {
 	z-index: 9;
 	position: fixed;
 	display: none;
-	margin: 26px 0px 0px 340px;
+	margin: 26px 0px 0px 350px;
 }
 
 .dark .buttontoggle {
@@ -521,6 +521,9 @@ nav {
 	}
 }
 
+.dark .scrollTop {
+	color: #15426e;
+}
 @media screen and (max-width: 768px) {
 
 	.sidebar {
@@ -609,6 +612,9 @@ nav {
 		margin: 350px 0px 0px 50px;
 		opacity: 0.5;
 	}
+	.toggle ul {
+		margin-left: 250px;
+	}
 }
 
 @media screen and (max-width: 375px) {
@@ -623,10 +629,16 @@ nav {
 	.buttontoggle {
 		margin: 26px 0px 0px 300px;
 	}
+	.toggle ul {
+		margin-left: 210px;
+	}
 }
 
 @media screen and (max-width: 360px) {
 	.backgroundHeader {
 		height: 740px;
+	}
+	.toggle ul {
+		margin-left: 200px;
 	}
 }
