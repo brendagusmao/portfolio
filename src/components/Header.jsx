@@ -9,11 +9,11 @@ import { MdPermContactCalendar, MdOutlineAutoGraph } from "react-icons/md";
 import '../styles/header.css'
 import Logo from './Logo';
 import { Maquina } from './maquinadeescrever';
+import ScrollArrow from './Scrolltop';
 
 function Header() {
    const { lightMode, setLightMode } = useContext(MyContext);
    const [menuState, setMenuState] = useState('closed');
- 
 
    function toggleMenu() {
      setMenuState(menuState === 'closed' ? 'open' : 'closed');
@@ -29,27 +29,18 @@ function Header() {
      }
    }, [menuState]);
 
-   const select = (el, all = false) => {
-      el = el.trim()
-      if (all) {
-        return [...document.querySelectorAll(el)]
-      } else {
-        return document.querySelector(el)
-      }
-    }
-
-
-  const scrollto = (el) => {
-    let elementPos = select(el).offsetTop
-    window.scrollTo({
-      top: elementPos,
-      behavior: 'smooth'
-    })
+  const scrollto = () => {
+    const nav = document.querySelector('.navegation');
+          nav.classList.add('active');
+          window.scrollTo({
+            behavior: 'smooth'
+          })
   }
-
+  
   // onClick={scrollto}
   return  ( 
-     <header className="container-fluid backgroundHeader">
+     <header className="container-fluid backgroundHeader" id="home">
+      <div className="overlay" />
         <div onClick={toggleMenu} className="buttontoggle">
             {menuState === 'closed' ? <BsFillGridFill className='hamburger' /> : <BsChevronContract className='hamburger' />}
         </div>
@@ -66,7 +57,8 @@ function Header() {
       <nav className="container-fluid">
       <h1 id="title"> <Logo /></h1>
        <div className="navegation">
-          <li><a href="#about" onClick={scrollto}><span>About</span></a></li>
+       <li><a href="#home" onClick={scrollto} className="scrollto active"><span>home</span></a></li>
+          <li><a href="#about" onClick={scrollto} className="scrollto"><span>About</span></a></li>
           <li><a href="#skills"><span>Skills</span></a></li>
           <li><a href="#projects"><span>Projects</span></a></li>
           <li><a href="#contact"><span>Contact</span></a></li>
@@ -92,6 +84,7 @@ function Header() {
             </div>
              </h3>
           </div>
+      <ScrollArrow />
      </header>
   );
 }

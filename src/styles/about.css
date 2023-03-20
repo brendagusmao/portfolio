@@ -1,0 +1,68 @@
+.background {
+	align-items: left;
+	top: 0px;
+	background: linear-gradient(90deg, #ebe4fa, #ede6fad0, #ede9f6);
+	background-color: #f4eeff;
+	flex-direction: row;
+	display: flex;
+	height: 680px;
+	align-content: center;
+	justify-content: space-between;
+}
+
+.dark .background {
+	background: #061320;
+	color: #d4d2d2;
+}
+
+.abouttitle h3 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.abouttitle {
+	width: 100%;
+    height: auto;
+    clear: both;
+    float: left;
+	margin: 130px 0px 0px 220px;
+}
+
+.abouttitle span {
+    color: #e65f78;
+}
+
+.abouttitle span {
+    color: #e65f78;
+    display: inline-block;
+    font-family: poppins;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: 4px;
+}
+.bio img {
+	width: 290px;
+	margin-top: 40px;
+	position: absolute;
+	float: left;
+}
+.right {
+    width: 50%;
+    height: auto;
+	margin-top: 40px;
+	font-family: 'Mulish', sans-serif;
+	text-align: justify;
+	float: left;
+}
+ .text {
+	margin-bottom: 23px;
+    float: right;
+	margin-right: 150px;
+}
+.tags {
+	padding-top: 20px;
+}
+.tags img {
+	width: auto;
+	margin: 5px;
+}

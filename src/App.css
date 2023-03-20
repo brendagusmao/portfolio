@@ -9,7 +9,7 @@
   --cor-text-h1:rgb(23, 23, 23);
   --cor-text-h2:rgb(53, 53, 53);
   --cor-text-h1-dark:#fdf4da;
-  --cor-text-h2-dark:#c4c4c4;
+  --cor-text-h2-dark:#f1f0f0;
 }
 
 body {
@@ -30,7 +30,13 @@ body {
 	src: url(./fontes/Recoleta-Bold.ttf);
 }
 
-@import url('http://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Darker+Grotesque:wght@700&family=Montserrat+Subrayada&family=Montserrat:wght@400;500;600;800&family=Mulish:wght@400;800&family=Nanum+Myeongjo:wght@700&family=Playfair+Display:ital,wght@0,500;1,600&family=Poppins&family=Quicksand:wght@500&family=Tilt+Warp&family=Work+Sans:wght@700&family=Yanone+Kaffeesatz&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Darker+Grotesque:wght@700&family=Montserrat+Subrayada&family=Montserrat:wght@400;500;600;800&family=Mulish:wght@400;800&family=Nanum+Myeongjo:wght@700&family=Playfair+Display:ital,wght@0,500;1,600&family=Poppins&family=Quicksand:wght@500&family=Tilt+Warp&family=Work+Sans:wght@700&family=Yanone+Kaffeesatz&display=swap');
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.4;
+  font-family: poppins;
+  color: #000;
+}
 
 .App {
   text-align: center;
