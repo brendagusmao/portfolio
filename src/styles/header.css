@@ -8,11 +8,43 @@
 	background-color: rgb(244, 238, 255);
 	flex-direction: row;
 	display: flex;
-	height: 667px;
+	height: 635px;
 	align-content: center;
 	justify-content: space-between;
 }
 
+@-webkit-keyframes puff-in-ver {
+	0% {
+	  -webkit-transform: scaleY(2);
+			  transform: scaleY(2);
+	  -webkit-filter: blur(4px);
+			  filter: blur(4px);
+	  opacity: 0;
+	}
+	100% {
+	  -webkit-transform: scaleY(1);
+			  transform: scaleY(1);
+	  -webkit-filter: blur(0px);
+			  filter: blur(0px);
+	  opacity: 1;
+	}
+  }
+  @keyframes puff-in-ver {
+	0% {
+	  -webkit-transform: scaleY(2);
+			  transform: scaleY(2);
+	  -webkit-filter: blur(4px);
+			  filter: blur(4px);
+	  opacity: 0;
+	}
+	100% {
+	  -webkit-transform: scaleY(1);
+			  transform: scaleY(1);
+	  -webkit-filter: blur(0px);
+			  filter: blur(0px);
+	  opacity: 1;
+	}
+  }
 .backgroundHeader .overlay {
 	position: absolute;
 	top: 0;
@@ -73,6 +105,8 @@ nav {
 	align-content: center;
 	align-items: center;
 	flex-direction: row;
+	-webkit-animation: puff-in-ver 0.7s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+	animation: puff-in-ver 0.7s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
 }
 
 .dark nav {
@@ -303,10 +337,10 @@ nav {
 	background: linear-gradient(45deg, #37eba9d9, #5b37eb);
 	position: absolute;
 	display: flex;
-	width: 500px;
-	height: 500px;
+	width: 450px;
+	height: 450px;
 	filter: blur(calc(250px / 5));
-	margin: 120px 0px 100px 400px;
+	margin: 100px 0px 100px 400px;
 	animation: rotate 10s cubic-bezier(0.8, 0.2, 0.2, 0.8) alternate infinite;
 	border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
 	opacity: 0.9;
