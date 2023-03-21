@@ -33,6 +33,11 @@
     color: #e65f78;
 }
 
+.margin {
+	margin-left: 5px;
+	font-weight: bold;
+}
+
 .abouttitle span {
     color: #e65f78;
     display: inline-block;

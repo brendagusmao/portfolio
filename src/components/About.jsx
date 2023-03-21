@@ -1,5 +1,6 @@
 import React from 'react';
 import '../styles/about.css'
+import { RxReader } from "react-icons/rx";
 
 class About extends React.Component {
   render() {
@@ -9,6 +10,7 @@ class About extends React.Component {
           <section className="abouttitle">
             <span>
               Biografia
+              <RxReader className="margin" />
             </span>
             <h3> About me</h3>
             <section className="bio">

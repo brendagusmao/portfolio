@@ -51,7 +51,7 @@
 	bottom: 0;
 	left: 0;
 	right: 0;
-
+	height: 635px;
 	background: linear-gradient(0deg, rgba(251, 229, 240, 0.45) 2%, rgba(254, 229, 241, 0.26) 26%, rgba(254, 229, 241, 0.178) 59%, rgba(255, 255, 255, 0.178) 100%);
 	background-color: rgba(244, 238, 255, 0.357);
 	z-index: 1;
