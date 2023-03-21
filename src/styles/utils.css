@@ -147,8 +147,12 @@ textarea:focus {
 .dark textarea {
     border: 1px solid #081a2a;
     background: #0c2339;
+    color: #fff;
 }
 
+.dark textarea:focus {
+    color: #fff;
+}
 .buttom {
     background-color: #0c2339;
     margin: 25px 0px 0px 230px;

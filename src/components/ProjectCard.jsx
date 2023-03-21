@@ -12,7 +12,7 @@ class ProjectCard extends React.Component {
         <thead>
           <tr>
             <th className="item">
-             <img src={ image } alt={ name } />
+             <img src={ image } alt={ name } loading="lazy" />
               <div className="info">
                 <AiFillEye className="eyes" />
               </div>
