@@ -129,46 +129,47 @@ nav {
 	font-family: Recoleta;
 	color: #112437;
 	font-size: 20px;
-	margin: 5px 0px 0px 50px;
+	margin: 5px 0px 0px 30px;
 	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.19);
 	-webkit-animation: change-color 1s infinite;
-	animation: change-color 2.8s infinite;
+	animation: change-color 5.8s infinite;
 }
 
 .dark .logo {
 	color: #d5c7f0;
 	text-shadow: 1px 1px 1px  rgba(0, 0, 0, 0.21);
+	-webkit-animation: change-colordark 1s infinite;
+	animation: change-colordark 5.8s infinite;
 }
 
 @keyframes change-color {
     0% {
         color: #112437;
     }
-	10% {
+    50% {
+        color: #fdbfcb;
+    }
+	100% {
+        color: #02376b;
+    }
+}
+
+@keyframes change-colordark {
+    0% {
         color: #112437;
     }
     50% {
-        color: rgb(238, 146, 193);
-    }
-	60% {
-        color: rgb(238, 146, 193);
+        color: #e65f78;
     }
 	70% {
-        color: #6f9bc8;
-    }
-
-    80% {
-        color: rgb(247, 189, 219);
-    }
-
-	90% {
-        color: rgb(247, 189, 219);
+        color: #8ab0d6;
     }
 
 	100% {
         color: #02376b;
     }
 }
+
 
 .navegation a {
 	width: auto;

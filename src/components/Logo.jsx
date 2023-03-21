@@ -6,7 +6,7 @@ class Logo extends React.Component {
     return (
         <>
           <div className="logo">
-          <Maquina text="Brenda.dev" delay={1600} />
+          <Maquina text="brenda.dev" delay={1600} />
           </div>
         </>
     );

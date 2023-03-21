@@ -11,12 +11,13 @@
 .redes a {
     color: #061320cd;
     padding: 5px;
-    height: 5px;
+    height: 35px;
     border-radius: 100px;
     margin-left: 5px;
     font-size: 25px;
     text-decoration: none;
   filter: drop-shadow(0px 1px 4px rgba(0, 0, 0, 0.05));
+  transition: all 1s ease-out;
 }
 
 .dark .redes a{
@@ -25,4 +26,39 @@
 
 .redes a:hover {
     color: #e65f78 ;
+}
+
+@media screen and (max-width: 768px) {
+
+    .redes {
+    margin: 450px 0px 0px -350px;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    width: 50px;
+    height: 100%;
+    opacity: 0.5;
+    transition: all 2s ease-out;
+    }
+
+    .redes:hover {
+        opacity: 1;
+    }
+}
+
+@media screen and (max-width: 375px) {
+
+    .redes {
+    margin: 450px 0px 0px -300px;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    width: 50px;
+    height: 100%;
+    opacity: 0.5;
+    }
+    
+    .redes:hover {
+        opacity: 1;
+    }
 }
