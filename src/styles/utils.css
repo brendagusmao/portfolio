@@ -182,6 +182,17 @@ textarea:focus {
     .redes:hover {
         opacity: 1;
     }
+
+    .form {
+        width: 500px;
+        display: flex;
+        float: right;
+        align-items: center;
+        justify-content: flex-end;
+        align-content: center;
+        position: relative;
+        margin: 190px 10px 0px 0px;
+    }
 }
 
 @media screen and (max-width: 375px) {
