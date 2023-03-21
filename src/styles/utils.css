@@ -1,0 +1,28 @@
+.redes {
+    display: flex;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    margin: 350px 0px 0px 0px;
+    cursor: pointer;
+    z-index: 9;
+}
+.redes a {
+    color: #061320cd;
+    padding: 5px;
+    height: 5px;
+    border-radius: 100px;
+    margin-left: 5px;
+    font-size: 25px;
+    text-decoration: none;
+  filter: drop-shadow(0px 1px 4px rgba(0, 0, 0, 0.05));
+}
+
+.dark .redes a{
+    color: #b9dbfeca;
+}
+
+.redes a:hover {
+    color: #e65f78 ;
+}

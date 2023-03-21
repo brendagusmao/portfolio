@@ -105,8 +105,6 @@ nav {
 	align-content: center;
 	align-items: center;
 	flex-direction: row;
-	-webkit-animation: puff-in-ver 0.7s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
-	animation: puff-in-ver 0.7s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
 }
 
 .dark nav {
@@ -128,6 +126,48 @@ nav {
 	align-items: center;
 	justify-content: flex-start;
 	align-content: center;
+	font-family: Recoleta;
+	color: #112437;
+	font-size: 20px;
+	margin: 5px 0px 0px 50px;
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.19);
+	-webkit-animation: change-color 1s infinite;
+	animation: change-color 2.8s infinite;
+}
+
+.dark .logo {
+	color: #d5c7f0;
+	text-shadow: 1px 1px 1px  rgba(0, 0, 0, 0.21);
+}
+
+@keyframes change-color {
+    0% {
+        color: #112437;
+    }
+	10% {
+        color: #112437;
+    }
+    50% {
+        color: rgb(238, 146, 193);
+    }
+	60% {
+        color: rgb(238, 146, 193);
+    }
+	70% {
+        color: #6f9bc8;
+    }
+
+    80% {
+        color: rgb(247, 189, 219);
+    }
+
+	90% {
+        color: rgb(247, 189, 219);
+    }
+
+	100% {
+        color: #02376b;
+    }
 }
 
 .navegation a {
@@ -527,6 +567,10 @@ nav {
 	color: #15426e;
 }
 @media screen and (max-width: 768px) {
+	.logo {
+		margin-left: 10px;
+	}
+	
 	.backgroundHeader .overlay {
 		position: absolute;
 		height: 100%;

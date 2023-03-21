@@ -5,10 +5,10 @@ import { HiSun } from "react-icons/hi";
 import { BsFillMoonStarsFill, BsFillGridFill, BsChevronContract } from "react-icons/bs";
 import { SiAboutdotme } from "react-icons/si";
 import { RiPagesFill } from "react-icons/ri";
-import { MdPermContactCalendar, MdOutlineAutoGraph } from "react-icons/md";
+import { MdPermContactCalendar } from "react-icons/md";
 import '../styles/header.css'
 import Logo from './Logo';
-import { Maquina } from './maquinadeescrever';
+import Redes from './Redes';
 import ScrollArrow from './Scrolltop';
 
 function Header() {
@@ -50,7 +50,6 @@ function Header() {
             <li><SiAboutdotme className="icontoggle" /><a onClick={toggleMenu} href="#about">sobre</a></li>
             <li><RiPagesFill className="icontoggle" /><a onClick={toggleMenu} href="#projects">projetos</a></li>
             <li><MdPermContactCalendar className="icontoggle" /><a onClick={toggleMenu} href="#contact">contato</a></li>
-            <li><MdOutlineAutoGraph className="icontoggle" /><a onClick={toggleMenu} href="#skills">Skills</a></li>
             </ul>
           </div>
           {/* Menu Moblie */}
@@ -59,7 +58,6 @@ function Header() {
        <div className="navegation">
        <li><a href="#home" onClick={scrollto} className="scrollto active"><span>home</span></a></li>
           <li><a href="#about" onClick={scrollto} className="scrollto"><span>About</span></a></li>
-          <li><a href="#skills"><span>Skills</span></a></li>
           <li><a href="#projects"><span>Projects</span></a></li>
           <li><a href="#contact"><span>Contact</span></a></li>
         </div>
@@ -75,15 +73,16 @@ function Header() {
           <h2>
           Hello, World! i' am
           </h2>
-          <h1><Maquina text="Brenda Gusmão" delay={1200} /></h1>
+          <h1>Brenda Gusmão</h1>
           <h3>developer 
-          <div className="animated-info">
+            <div className="animated-info">
                <span className="animated-item">Full Stack</span>
                <span className="animated-item">Web</span>
-               <span className="animated-item">software</span>
+               <span className="animated-item"></span>
             </div>
-             </h3>
-          </div>
+          </h3>
+          <Redes />
+        </div>
       <ScrollArrow />
      </header>
   );
