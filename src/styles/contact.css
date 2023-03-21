@@ -1,0 +1,41 @@
+#contact {
+	align-items: left;
+	top: 0px;
+	background: linear-gradient(90deg, #d7d0e6, #ece4fc, #f2eefa);
+	background-color: #f4eeff;
+	flex-direction: row;
+	display: flex;
+	height: 480px;
+	align-content: center;
+	justify-content: space-between;
+}
+
+.dark #contact {
+  background: linear-gradient(90deg, #050f18, #071829, #081929);
+	/* background: #061320; */
+	color: #d4d2d2;
+}
+
+#contact p {
+	width: 500px;
+    display: flex;
+    float: right;
+    align-items: center;
+    justify-content: flex-end;
+    align-content: center;
+    position: relative;
+    margin: 0px 10px 0px 600px;
+	font-family: 'Mulish', sans-serif;
+    font-size: 25px;
+    font-weight: 800;
+	color: #0c2339;
+}
+
+.dark #contact p {
+	color: #f8bbc6;
+}
+
+.totop {
+	margin: -100px 0px 0px 350px;
+	position: absolute;
+}
