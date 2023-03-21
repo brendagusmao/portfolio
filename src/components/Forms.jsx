@@ -29,7 +29,7 @@ function ContactForm() {
       <label htmlFor="telephone">
       <i> <BsFillTelephoneFill /></i>
         Telephone Number (Optional)</label>
-      <input type="telephone" name="telephone" id="telephone" placeholder="(31) 9 99999999" />
+      <input type="number" name="telephone" id="telephone" placeholder="(31) 9 99999999" />
 
       <label htmlFor="email">
        <i> <MdAlternateEmail /></i>

@@ -41,7 +41,7 @@
     align-items: center;
     justify-content: center;
     position: absolute;
-    margin: 350px 0px 0px 0px;
+    margin: 250px 0px 0px 0px;
     cursor: pointer;
     z-index: 9;
 }
@@ -68,7 +68,7 @@
 
 .red span {
 	width: 140%;
-	margin: 90px 0px 0px -0px;
+	margin: 90px 0px 0px 650px;
 	position: absolute;
 	padding: 5px;
     text-decoration: none;
