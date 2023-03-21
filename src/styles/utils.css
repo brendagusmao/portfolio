@@ -62,7 +62,6 @@ input {
     background: #f0ebfb;
     padding: 5px;
     border-radius: 5px;
-    color: #172a3a;
     font-family: 'Mulish', sans-serif;
     font-size: 13px;
 }
@@ -89,6 +88,9 @@ input:focus {
 
 .dark input:focus {
     color: #fff;
+}
+.dark input {
+    color:#fff;
 }
 
 input:focus+label i {
