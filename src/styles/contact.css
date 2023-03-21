@@ -84,6 +84,10 @@
 }
 
 @media screen and (max-width: 768px) {
+	.main {
+		margin: 30px 0px 0px 10px;
+	}
+
 	#contact {
 		height: 780px ;
 	}

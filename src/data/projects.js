@@ -1,6 +1,6 @@
-import SolarSystem from '../image/background (1).png';
-import PixelArt from '../image/Pixelart.png';
-import TrybeWarts from '../image/TrybeWarts.png';
+import SolarSystem from '../image/projetcs/background (1).png';
+import PixelArt from '../image/projetcs/Pixelart.png';
+import TrybeWarts from '../image/projetcs/TrybeWarts.png';
 // const Git = 'FaGithub';
 
 const Project = [
