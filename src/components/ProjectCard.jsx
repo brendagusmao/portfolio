@@ -6,7 +6,7 @@ import '../styles/Projects.css';
 
 class ProjectCard extends React.Component {
   render() {
-    const { name, image, description, url, tec } = this.props;
+    const { name, image, description, url, tec, page } = this.props;
     return (
       <table>
         <thead>
@@ -20,7 +20,7 @@ class ProjectCard extends React.Component {
              <h1>  { name } </h1>
               <section className="clickbar">
                 <a href={url} target="_blank" rel="noreferrer" > <AiFillGithub /></a>
-                <a href={url} target="_blank" rel="noreferrer" > <GoLinkExternal /></a>
+                <a href={page} target="_blank" rel="noreferrer" > <GoLinkExternal /></a>
               </section>
              </section>
              <section className="tec"> {tec} </section>

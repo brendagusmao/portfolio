@@ -24,6 +24,7 @@ class Projects extends React.Component {
                 image={ element.image }
                 tec={ element.tec }
                 url={ element.url }
+                page={ element.page }
                 description={ element.description }
               />
             )) }
