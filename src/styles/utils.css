@@ -191,11 +191,22 @@ textarea:focus {
         justify-content: flex-end;
         align-content: center;
         position: relative;
-        margin: 190px 10px 0px 0px;
+        margin: 150px 10px 0px 0px;
+        font-size: 16px;
+    }
+    form {
+        padding: 10px;
+        font-size: 16px;
+    }
+    input, input::after, input:focus, input::placeholder, label, label i {
+        font-size: 16px;
+    }
+    .buttom {
+        margin: 25px 0px 0px 150px;
     }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 377px) {
 
     .redes {
         margin: 450px 0px 0px -300px;
@@ -209,5 +220,8 @@ textarea:focus {
 
     .redes:hover {
         opacity: 1;
+    }
+    .buttom {
+        margin: 25px 0px 0px 110px;
     }
 }

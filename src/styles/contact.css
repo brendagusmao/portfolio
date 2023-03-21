@@ -35,20 +35,96 @@
 	color: #f8bbc6;
 }
 
-.totop {
-	margin: -100px 0px 0px 350px;
+.red {
+    display: flex;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    margin: 350px 0px 0px 0px;
+    cursor: pointer;
+    z-index: 9;
+}
+
+.red a {
+    color: #061320cd;
+    padding: 5px;
+    height: 35px;
+    border-radius: 100px;
+    margin-left: 5px;
+    font-size: 25px;
+    text-decoration: none;
+    filter: drop-shadow(0px 1px 4px rgba(0, 0, 0, 0.05));
+    transition: all 1s ease-out;
+}
+
+.dark .red a {
+    color: #b9dbfeca;
+}
+
+.red a:hover {
+    color: #e65f78;
+}
+
+.red span {
+	width: 140%;
+	margin: 90px 0px 0px -0px;
 	position: absolute;
+	padding: 5px;
+    text-decoration: none;
+    filter: drop-shadow(0px 1px 4px rgba(0, 0, 0, 0.05));
+    transition: all 1s ease-out;
+	font-family: 'Mulish', sans-serif;
+    font-size: 16px;
+    font-weight: 800;
+}
+.red i {
+	color: #e65f78c7;
+	font-size: 25px;
 }
 
 @media screen and (max-width: 768px) {
-	.totop {
-		margin: 0px 0px 0px 0px;
-        flex-direction:row;
-        flex-wrap: nowrap;
-        align-content: center;
-        width: 50px;
-        height: 100%;
-        opacity: 0.5;
-        transition: all 2s ease-out;
+	#contact {
+		height: 780px ;
+	}
+	.red {
+
+		margin: 130px 0px 0px 90px;
+	}
+	#contact p {
+		width: 100%;
+		display: flex;
+		float: right;
+		align-items: center;
+		justify-content: flex-end;
+		align-content: center;
+		position: relative;
+        margin: 190px 10px 0px 50px;
+		font-family: 'Mulish', sans-serif;
+		font-size: 25px;
+		font-weight: 800;
+		color: #0c2339;
+	}
+	.red span {
+		width: 140%;
+		margin: 90px 0px 0px -0px;
+		position: absolute;
+		padding: 5px;
+		text-decoration: none;
+		filter: drop-shadow(0px 1px 4px rgba(0, 0, 0, 0.05));
+		transition: all 1s ease-out;
+		font-family: 'Mulish', sans-serif;
+		font-size: 16px;
+		font-weight: 800;
+	}
+}
+@media screen and (max-width: 377px) {
+
+    .red span {
+		width: 160%;
+    }
+	.red {
+
+		margin: 130px 0px 0px 70px;
 	}
 }

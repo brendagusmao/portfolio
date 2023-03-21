@@ -10,7 +10,7 @@ const Project = [
       url: 'https://link.com.br/',
       page: 'https://link.com.br/',
       tec: 'Frontend',
-      description: 'Projeto desenvolvido em html e css, usando componentização dom',
+      description: 'Projeto desenvolvido em html e css e javascript, usando componentização dom.',
     },
     {
         image: TrybeWarts,
