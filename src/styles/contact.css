@@ -100,10 +100,10 @@
 		display: flex;
 		float: right;
 		align-items: center;
-		justify-content: flex-end;
+		justify-content: center;
 		align-content: center;
 		position: relative;
-        margin: 190px 10px 0px 50px;
+        margin: 190px 10px 0px 10px;
 		font-family: 'Mulish', sans-serif;
 		font-size: 25px;
 		font-weight: 800;
