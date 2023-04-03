@@ -18,7 +18,12 @@ class About extends React.Component {
             </section>
             <section className="right text">
             <img src="https://i.pinimg.com/236x/c0/bc/7f/c0bc7f3b09d0a3deda69e5fc758d76d0.jpg" alt="" className="icon-left" />
-             Me definir é muito difícil. Às vezes pareço comum, às vezes singular. Sou bem assim: metamorfose ambulante. Adolescente em crise. Crises. De tudo o que você imaginar. O que mais valorizo no mundo? Amigos. O melhor sentimento? Felicidade. O melhor verbo? Amar. Conheço uma parte de uma frase, não sei o autor, mas ela define bem quem sou: viver é tentar ser feliz. É o que faço: vivo. E sim, me considero uma pessoa feliz, apesar de tudo. Depois de uma queda? Levanto e sigo em frente. Já desisti de contar os mil e um foras que dou. Vivo em busca de muitas coisas, mas já possuo a principal delas: a alegria. Uma companhia? Livros. Algo que te alegra? De novo os preciosíssimos amigos.
+            <section>Olá, meu nome é Brenda Pereira Gusmão, tenho 24 anos e sou residente em Belo Horizonte, MG. Atualmente, estou cursando Engenharia de Produção na FEAMIG e também estudo Desenvolvimento Web na Trybe.
+
+Sou uma pessoa apaixonada por novos desafios e experiências, e não tenho medo de mudanças. Na verdade, essa é uma das coisas que mais me motiva, e por isso, estou sempre em busca de me superar e entregar o meu melhor.
+
+Entre as minhas principais habilidades, posso destacar a visão analítica, a capacidade de resolver problemas e o aprendizado rápido. Estou sempre buscando me desenvolver nessas áreas para me tornar uma profissional cada vez melhor.
+</section>
               <div className="tags">
               <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="" />
               <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white" alt="" />
