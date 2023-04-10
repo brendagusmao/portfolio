@@ -7,9 +7,9 @@ import { SiAboutdotme } from "react-icons/si";
 import { RiPagesFill } from "react-icons/ri";
 import { MdPermContactCalendar } from "react-icons/md";
 import '../styles/header.css'
-import Logo from './Logo';
-import Redes from './Redes';
-import ScrollArrow from './Scrolltop';
+import Logo from '../components/Logo';
+import Redes from '../components/Redes';
+import ScrollArrow from '../components/Scrolltop';
 
 function Header() {
    const { lightMode, setLightMode } = useContext(MyContext);
@@ -47,6 +47,7 @@ function Header() {
           {/* Menu Moblie */}
           <div className="toggle">
             <ul>
+            <li><SiAboutdotme className="icontoggle" /><a onClick={toggleMenu} href="#home">home</a></li>
             <li><SiAboutdotme className="icontoggle" /><a onClick={toggleMenu} href="#about">sobre</a></li>
             <li><RiPagesFill className="icontoggle" /><a onClick={toggleMenu} href="#projects">projetos</a></li>
             <li><MdPermContactCalendar className="icontoggle" /><a onClick={toggleMenu} href="#contact">contato</a></li>

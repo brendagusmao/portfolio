@@ -1,5 +1,6 @@
 :root {
-  --cor-principal:rgb(237, 174, 126);
+  --cor-principal:#e65f78;
+  --cor-bg-dark:#02376b;
   --cor-principal-sedundaria:#cdbcc9;
   --cor-borda-itens:#FED766;
   --cor-text-menu:rgba(72,72,72);
@@ -8,7 +9,7 @@
   --cor-icons-dark:rgb(69, 69, 69);
   --cor-text-h1:rgb(23, 23, 23);
   --cor-text-h2:rgb(53, 53, 53);
-  --cor-text-h1-dark:#fdf4da;
+  --cor-text-h1-dark:#f4f4f4;
   --cor-text-h2-dark:#f1f0f0;
 }
 
@@ -30,8 +31,7 @@ body {
 	src: url(./fontes/Recoleta-Bold.ttf);
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Darker+Grotesque:wght@700&family=Montserrat+Subrayada&family=Montserrat:wght@400;500;600;800&family=Mulish:wght@400;800&family=Nanum+Myeongjo:wght@700&family=Playfair+Display:ital,wght@0,500;1,600&family=Poppins:wght@400;700;800;900&family=Quicksand:wght@500&family=Tilt+Warp&family=Work+Sans:wght@700&family=Yanone+Kaffeesatz&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Darker+Grotesque:wght@700&family=Montserrat+Subrayada&family=Montserrat:wght@400;500;600;800&family=Mulish:wght@400;500;600;800&family=Nanum+Myeongjo:wght@700&family=Playfair+Display:ital,wght@0,500;1,600&family=Poppins:wght@400;700;800;900&family=Quicksand:wght@500&family=Tilt+Warp&family=Work+Sans:wght@700&family=Yanone+Kaffeesatz&display=swap');
 h1, h2, h3, h4, h5, h6 {
   line-height: 1.4;
   font-family: poppins;

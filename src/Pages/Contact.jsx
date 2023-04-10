@@ -1,5 +1,5 @@
 import React from 'react';
-import Forms from './Forms';
+import Forms from '../components/Forms';
 import '../styles/contact.css';
 import {BsFillTelephoneFill} from 'react-icons/bs';
 import { ImLinkedin } from 'react-icons/im';
@@ -16,7 +16,7 @@ class Redes extends React.Component {
               Contact
               <BsFillTelephoneFill className="margin" />
             </span>
-            <h3> Me </h3>
+            <h3> Brenda. </h3>
           </section>
           <div className="red">
           <a href="https://www.linkedin.com/in/brendapereiragusmao/" target="_blank" rel="noreferrer" > <ImLinkedin /></a>

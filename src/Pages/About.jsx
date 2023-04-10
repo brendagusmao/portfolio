@@ -2,6 +2,7 @@ import React from "react";
 import "../styles/about.css";
 import { RxReader } from "react-icons/rx";
 import Me from '../image/me.jpg';
+import Tags from '../components/Tags';
 
 class About extends React.Component {
   render() {
@@ -40,38 +41,7 @@ class About extends React.Component {
                 profissional cada vez melhor.
               </section>
               <div className="tags">
-                <img
-                  src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB"
-                  alt=""
-                />
-                <img
-                  src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white"
-                  alt=""
-                />
-                <img
-                  src="https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E"
-                  alt=""
-                />
-                <img
-                  src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white"
-                  alt=""
-                />
-                <img
-                  src="https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white"
-                  alt=""
-                />
-                <img
-                  src="https://img.shields.io/badge/Sequelize-52B0E7?style=for-the-badge&logo=Sequelize&logoColor=white"
-                  alt=""
-                ></img>
-                <img
-                  src="https://img.shields.io/badge/MySQL-005C84?style=for-the-badge&logo=mysql&logoColor=white"
-                  alt=""
-                />
-                <img
-                  src="https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white"
-                  alt=""
-                />
+               <Tags />
               </div>
             </section>
           </section>

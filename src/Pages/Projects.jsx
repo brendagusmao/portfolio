@@ -1,5 +1,5 @@
 import React from 'react';
-import ProjectCard from './ProjectCard';
+import ProjectCard from '../components/ProjectCard';
 import Project from '../data/projects';
 import '../styles/Projects.css';
 import { RiPagesFill } from "react-icons/ri";
