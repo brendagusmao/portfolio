@@ -1,6 +1,7 @@
 import SolarSystem from '../image/projetcs/background (1).png';
 import PixelArt from '../image/projetcs/Pixelart.png';
 import TrybeWarts from '../image/projetcs/TrybeWarts.png';
+import Solar from '../image/projetcs/solar.gif';
 // const Git = 'FaGithub';
 
 const Project = [
@@ -21,7 +22,7 @@ const Project = [
         description: 'Feito com n sei o que',
       },
     {
-        image: SolarSystem,
+        image: Solar,
         name: 'Solar System',
         url: 'https://link.com.br/',
         page: 'https://link.com.br/',
