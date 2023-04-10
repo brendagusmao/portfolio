@@ -16,13 +16,13 @@ class About extends React.Component {
             <h3> About me</h3>
             <section className="bio">
               <img
-                src={Me}
+                src={ Me }
                 alt=""
               />
             </section>
             <section className="right text">
               <img
-                src="https://i.pinimg.com/236x/c0/bc/7f/c0bc7f3b09d0a3deda69e5fc758d76d0.jpg"
+                src={ Me }
                 alt=""
                 className="icon-left"
               />
