@@ -9,8 +9,8 @@ const Project = [
   {
     image: PixelArt,
     name: "Pixels Art",
-    url: "https://link.com.br/",
-    page: "https://link.com.br/",
+    url: "https://github.com/brendagusmao/Pixels-Art",
+    page: "https://brendagusmao.github.io/Pixels-Art/",
     tec: "Frontend",
     description:
       "Projeto desenvolvido em html e css e javascript, usando componentização dom.",
@@ -18,7 +18,7 @@ const Project = [
   {
     image: Trivia,
     name: "Trivia",
-    url: "https://bg-triviagame.vercel.app/",
+    url: "https://github.com/brendagusmao/Trivia",
     page: "https://bg-triviagame.vercel.app/",
     tec: "Frontend",
     description:
@@ -27,7 +27,7 @@ const Project = [
   {
     image: Solar,
     name: "Solar System",
-    url: "https://bg-solarsystem.vercel.app/",
+    url: "https://github.com/brendagusmao/Solar-System",
     page: "https://bg-solarsystem.vercel.app/",
     tec: "Frontend",
     description: "Landing Page feita em React, onde é possivel ter informações sobre o sistema solar",
@@ -35,18 +35,18 @@ const Project = [
   {
     image: Recipes,
     name: "App Recipes",
-    url: "https://bg-recipesapp.vercel.app/",
+    url: "https://github.com/brendagusmao/Recipes-App",
     page: "https://bg-recipesapp.vercel.app/",
     tec: "Frontend",
     description: "Um app de Receitas,  com filtros de busca, acompanhamento de receitas em progresso e receitas favoritas, feito com React",
   },
   {
-    image: SolarSystem,
-    name: "TFC",
-    url: "https://link.com.br/",
+    image: "https://media.licdn.com/dms/image/C4D22AQGu86p961GxyA/feedshare-shrink_800/0/1679578023684?e=2147483647&v=beta&t=g4JnPRtO8OOXQJe1fGim9H9CBTc4W7GpL66ZgdZhzEY",
+    name: "Trybe Futebol Clube",
+    url: "https://github.com/brendagusmao/Trybe-Futebol-Clube",
     page: "https://link.com.br/",
     tec: "backend",
-    description: "Feito com n sei o que",
+    description: "Nesse projeto, foi feita a contrução um back-end dockerizado utilizando modelagem de dados através do Sequelize. ",
   },
   {
     image: SolarSystem,

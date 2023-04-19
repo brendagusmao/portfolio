@@ -201,7 +201,7 @@ margin: 130px 0px 0px 220px;
   #projects {
     display: flex;
     flex-direction: row;
-    height: 2600px;
+    height: 3100px;
     align-content: center;
     justify-content: center;
     width: 100%;
@@ -210,7 +210,7 @@ margin: 130px 0px 0px 220px;
 
   .grid-container {
   grid-template-columns: repeat(1, 2fr);
-  grid-auto-rows: minmax(340px, auto);
+  grid-auto-rows: minmax(410px, auto);
   }
 
   .item {
