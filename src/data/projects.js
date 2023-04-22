@@ -54,7 +54,7 @@ const Project = [
     url: "https://github.com/brendagusmao/Delivery-App",
     page: "https://link.com.br/",
     tec: "backend / frontend",
-    description: "awhait",
+    description: "Projeto Full Stack onde foi desenvolvido um app de Delivery de bebidas, utilizando javascript, react, sequelize, mysql ",
   },
 ];
 

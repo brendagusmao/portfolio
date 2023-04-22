@@ -204,7 +204,7 @@ nav {
 }
 
 .navegation .Selected {
-    border-bottom: 2px solid rgb(207, 101, 156);
+    border-bottom: 2px solid #cf659c;
     transform: translateY(1px);
 }
 .navegation a .Selected{
@@ -254,7 +254,7 @@ nav {
 }
 
 .dark .navegation .active {
-	color: rgb(252, 231, 242);
+	color: rgb(195, 39, 120);
 }
 
 .navegation li:active span:active {
