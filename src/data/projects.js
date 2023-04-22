@@ -1,8 +1,8 @@
-import SolarSystem from "../image/projetcs/background (1).png";
 import PixelArt from "../image/projetcs/Pixelart.png";
 import Trivia from "../image/projetcs/trivia.gif";
 import Recipes from "../image/projetcs/recipesapp3.png";
 import Solar from "../image/projetcs/solar.gif";
+import Drink from "../image/projetcs/idrink.png";
 // const Git = 'FaGithub';
 
 const Project = [
@@ -49,11 +49,11 @@ const Project = [
     description: "Nesse projeto, foi feita a contrução um back-end dockerizado utilizando modelagem de dados através do Sequelize. ",
   },
   {
-    image: SolarSystem,
-    name: ".....",
-    url: "https://link.com.br/",
+    image: Drink,
+    name: "Delivery App - Idrink",
+    url: "https://github.com/brendagusmao/Delivery-App",
     page: "https://link.com.br/",
-    tec: "comming son",
+    tec: "backend / frontend",
     description: "awhait",
   },
 ];

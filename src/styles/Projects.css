@@ -166,19 +166,22 @@ margin: 130px 0px 0px 220px;
 }
 
 .tec {
+  width: 100%;
+  display: flex;
+  margin: -2px 0px 0px 20px;
+}
+.tec span {
   background-color: #e06078;
-  padding: 5px;
-  width: 20%;
+  width: auto;
   font-family: poppins;
   font-weight: 600;
   text-transform: uppercase;
   font-size: 10px;
-  margin: -2px 0px 0px 20px;
+  padding: 5px;
   border-radius: 5px;
   color: #fff;
 }
-
-.dark .tec {
+.dark .tec span{
   background-color: #e06077c2;
 }
 .clickbar {

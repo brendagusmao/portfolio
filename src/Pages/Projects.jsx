@@ -23,6 +23,7 @@ class Projects extends React.Component {
                 name={ element.name }
                 image={ element.image }
                 tec={ element.tec }
+                tec2={ element.tec2 }
                 url={ element.url }
                 page={ element.page }
                 description={ element.description }

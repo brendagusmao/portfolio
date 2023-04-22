@@ -6,7 +6,7 @@ import '../styles/Projects.css';
 
 class ProjectCard extends React.Component {
   render() {
-    const { name, image, description, url, tec, page } = this.props;
+    const { name, image, description, url, tec, tec2, page } = this.props;
     return (
       <table>
         <thead>
@@ -23,7 +23,9 @@ class ProjectCard extends React.Component {
                 <a href={page} target="_blank" rel="noreferrer" > <GoLinkExternal /></a>
               </section>
              </section>
-             <section className="tec"> {tec} </section>
+             <section className="tec"> 
+             <span>{tec}</span>
+             </section>
              <section className="desc"> { description }</section>
             </th>
           </tr>

@@ -95,21 +95,31 @@ nav {
 	height: 85px;
 	left: 0px;
 	top: 0px;
-	background: rgba(255, 255, 255, 0.071);
 	backdrop-filter: blur(2px);
 	display: flex;
 	justify-content: space-between;
 	position: fixed;
 	z-index: 8;
-	filter: drop-shadow(0px 1px 5px rgba(0, 0, 0, 0.05));
 	align-content: center;
 	align-items: center;
 	flex-direction: row;
 }
 
-.dark nav {
-	background: rgba(53, 52, 52, 0.152);
-	filter: drop-shadow(0px 1px 5px rgba(0, 0, 0, 0.15));
+.dark .navcolor {
+	background: #061320c3;
+	filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.115));
+}
+
+.dark .navcolor .navegation a{
+	color: var(--cor-text-h2-dark);
+	text-shadow: 1px 1px 1px solid rgba(0, 0, 0, 0.841);
+}
+.dark .navcolor .navegation .active {
+	color: rgb(248, 186, 218);
+}
+.navcolor {
+	background: #ebe4facf;
+	filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.112));
 }
 
 .navegation {
@@ -189,10 +199,17 @@ nav {
 
 
 .dark .navegation a {
-	color: var(--cor-text-h2-dark);
+	color: var(--cor-text-h2);
 	text-shadow: 1px 1px 1px solid rgba(0, 0, 0, 0.841);
 }
 
+.navegation .Selected {
+    border-bottom: 2px solid rgb(207, 101, 156);
+    transform: translateY(1px);
+}
+.navegation a .Selected{
+    color: rgb(255, 221, 239);
+}
 .navegation li {
 	display: inline-block;
 	cursor: pointer;
@@ -200,11 +217,11 @@ nav {
 	font-weight: 600;
 }
 
-.navegation li span {
+.navegation li .scrollto {
 	position: relative;
 }
 
-.navegation li span:before {
+.navegation li .scrollto:before {
 	content: "";
 	width: 0;
 	height: 2px;
@@ -218,7 +235,7 @@ nav {
 	transition: all 0.2s ease-in-out;
 }
 
-.navegation li:hover span:before {
+.navegation li:hover .scrollto:before {
 	width: 100%;
 	left: 0;
 	-webkit-transition: all 0.2s ease-in-out;
@@ -227,18 +244,17 @@ nav {
 	transition: all 0.2s ease-in-out;
 }
 
-.navegation li:active span:before {
+.navegation li:active .scrollto:before {
 	width: 100%;
 	left: 0;
 }
-
 
 .navegation .active {
 	color: rgb(207, 101, 156);
 }
 
 .dark .navegation .active {
-	color: rgb(255, 221, 239);
+	color: rgb(252, 231, 242);
 }
 
 .navegation li:active span:active {
@@ -567,6 +583,8 @@ nav {
 .dark .scrollTop {
 	color: #15426e;
 }
+
+
 @media screen and (max-width: 768px) {
 	.logo {
 		margin-left: 10px;
