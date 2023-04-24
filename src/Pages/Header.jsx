@@ -16,7 +16,7 @@ function Header() {
        <div className="gradient" />
         <div className="sidebar">
           <h2>
-          {languageMode === 'EN' ? 'Hello, World! i am' : 'Olá, Mundo! Eu sou'} 
+          {languageMode === 'EN' ? 'Hello, World! i am' : 'Olá, Mundo! Eu sou a'} 
           </h2>
           <h1>Brenda Gusmão</h1>
           <h3>{languageMode === 'EN' ? 'developer' : 'desenvolvedora'} 

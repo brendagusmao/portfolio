@@ -311,8 +311,7 @@ nav {
   height: 30px;
   font-size: 25px;
   background-color: #fddb73;
-  box-shadow: 0px 0px 5px var(--cor-principal);
-  border: 1px solid var(--cor-borda-principal);
+  border: 1px solid #f5cf5e;
   border-radius: 100px;
   display: flex;
   float: left;
