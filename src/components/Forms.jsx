@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
+import MyContext from '../context/MyContext';
 import { useForm, ValidationError } from '@formspree/react';
 import {MdAlternateEmail, MdEditSquare} from 'react-icons/md';
 import {BsFillTelephoneFill} from 'react-icons/bs';
@@ -8,9 +9,10 @@ import '../styles/utils.css';
 function ContactForm() {
   const [state, handleSubmit] = useForm("xknavrgd");
   const [phoneNumber, setPhoneNumber] = useState('');
+  const { languageMode } = useContext(MyContext);
 
   if (state.succeeded) {
-      return <p>Thanks for joining!</p>;
+      return <p>{languageMode === 'EN' ? 'Thanks for joining!' : 'Obrigada pelo contato'}</p>;
   }
 
   function formatPhoneNumber(phoneNumber) {
@@ -33,31 +35,31 @@ function ContactForm() {
 
       <label htmlFor="nome">
       <i> <CgProfile /></i>
-        Your Name
+      {languageMode === 'EN' ? 'Your Name' : 'Seu nome'}
       </label>
       <input
         id="nome"
         type="text" 
         name="nome"
-        placeholder=" Brenda Pereira Gusmão"
+        placeholder={languageMode === 'EN' ? 'First Name and Last Name' : 'Seu nome completo'}
         required
       />
 
       <label htmlFor="telephone">
       <i> <BsFillTelephoneFill /></i>
-        Telephone Number (Optional)</label>
-      <input type="text" name="telephone" id="telephone" placeholder="(31) 9 99999999" value={ phoneNumber }
+      {languageMode === 'EN' ? ' Telephone Number (Optional)' : 'Número de telefone (Opcional)'}</label>
+      <input type="text" name="telephone" id="telephone" placeholder="+55 (31) 9 99999999" value={ phoneNumber }
         onChange={handlePhoneNumberChange} />
 
       <label htmlFor="email">
        <i> <MdAlternateEmail /></i>
-        Email Address
+       {languageMode === 'EN' ? 'Email Address' : 'Endereço de e-mail'}
       </label>
       <input
         id="email"
         type="email" 
         name="email"
-        placeholder="exemple@email.com"
+        placeholder={languageMode === 'EN' ? 'exemple@email.com' : 'exemplo@email.com'}
         required
       />
       <ValidationError 
@@ -69,7 +71,7 @@ function ContactForm() {
 
       <label htmlFor="message">
         <i><MdEditSquare /></i>
-        Message
+        {languageMode === 'EN' ? 'Message' : 'Mensagem'}
       </label>
       <textarea
         id="message"
@@ -84,7 +86,7 @@ function ContactForm() {
 
 
       <button type="submit" disabled={state.submitting} className="buttom">
-        Submit
+      {languageMode === 'EN' ? 'Submit' : 'Enviar'}
       </button>
     </form>
     </div>

@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import MyContext from '../context/MyContext';
 import '../styles/header.css'
 import ToggleMenu from '../components/Togglemenu';
 import NavBar from '../components/Nav';
@@ -6,6 +7,7 @@ import Redes from '../components/Redes';
 import ScrollArrow from '../components/Scrolltop';
 
 function Header() {
+  const { languageMode } = useContext(MyContext);
   return  ( 
      <header className="container-fluid backgroundHeader" id="home">
       <div className="overlay" />
@@ -14,10 +16,10 @@ function Header() {
        <div className="gradient" />
         <div className="sidebar">
           <h2>
-          Hello, World! i' am
+          {languageMode === 'EN' ? 'Hello, World! i am' : 'Olá, Mundo! Eu sou'} 
           </h2>
           <h1>Brenda Gusmão</h1>
-          <h3>developer 
+          <h3>{languageMode === 'EN' ? 'developer' : 'desenvolvedora'} 
             <div className="animated-info">
                <span className="animated-item">Full Stack</span>
                <span className="animated-item">Web</span>

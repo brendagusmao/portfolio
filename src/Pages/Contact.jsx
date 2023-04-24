@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import MyContext from '../context/MyContext';
 import Forms from '../components/Forms';
 import '../styles/contact.css';
 import {BsFillTelephoneFill} from 'react-icons/bs';
@@ -7,13 +8,13 @@ import { FaGithubSquare } from 'react-icons/fa';
 import { GrInstagram } from 'react-icons/gr';
 import { MdEmail } from 'react-icons/md';
 
-class Redes extends React.Component {
-  render() {
+function Redes() {
+    const { languageMode } = useContext(MyContext);
     return (
         <div className="container-fluid" id="contact"> 
           <section className="main">
             <span>
-              Contact
+            {languageMode === 'EN' ? 'contact' : 'contato'}
               <BsFillTelephoneFill className="margin" />
             </span>
             <h3> Brenda. </h3>
@@ -31,6 +32,5 @@ class Redes extends React.Component {
         </div>
     );
   }
-}
 
 export default Redes;

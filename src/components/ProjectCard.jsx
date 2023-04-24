@@ -1,12 +1,13 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import MyContext from '../context/MyContext';
 import PropTypes from 'prop-types';
 import { AiFillEye, AiFillGithub } from "react-icons/ai";
 import { GoLinkExternal } from "react-icons/go";
 import '../styles/Projects.css';
 
-class ProjectCard extends React.Component {
-  render() {
-    const { name, image, description, url, tec, tec2, page } = this.props;
+function ProjectCard(props) {
+    const { name, image, description, url, tec, descriptioneng, page } = props;
+    const { languageMode } = useContext(MyContext);
     return (
       <table>
         <thead>
@@ -26,20 +27,20 @@ class ProjectCard extends React.Component {
              <section className="tec"> 
              <span>{tec}</span>
              </section>
-             <section className="desc"> { description }</section>
+             <section className="desc">  {languageMode === 'EN' ? descriptioneng : description }</section>
             </th>
           </tr>
         </thead>
       </table>
     );
   }
-}
+
 ProjectCard.propTypes = {
     name: PropTypes.string.isRequired,
     image: PropTypes.string.isRequired,
     tec: PropTypes.string.isRequired,
-    tec2: PropTypes.string.isRequired,
     description: PropTypes.string.isRequired,
+    descriptioneng: PropTypes.string.isRequired,
   };
 
 export default ProjectCard;
