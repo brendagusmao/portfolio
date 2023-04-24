@@ -145,7 +145,7 @@ nav {
   color: #112437;
   font-size: 20px;
   margin: 5px 0px 0px 30px;
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.19);
+  text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.19);
   -webkit-animation: change-color 1s infinite;
   animation: change-color 5.8s infinite;
 }
@@ -160,9 +160,6 @@ nav {
 @keyframes change-color {
   0% {
     color: #112437;
-  }
-  50% {
-    color: #fdbfcb;
   }
   100% {
     color: #02376b;
@@ -752,6 +749,12 @@ nav {
   }
   .toggle ul {
     margin-left: 210px;
+  }
+  .tgb {
+    margin: 0px 0px 0px 15px;
+  }
+  .box {
+	margin-right: 50px;
   }
 }
 
