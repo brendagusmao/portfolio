@@ -4,8 +4,8 @@ import { HiSun } from "react-icons/hi";
 import { BsFillMoonStarsFill } from "react-icons/bs";
 import '../styles/header.css'
 import Logo from '../components/Logo';
-import Brazil from '../image/favicons/brazil-svgrepo-com (1).svg';
-import Eua from '../image/favicons/flag-us-svgrepo-com.svg';
+import Brazil from '../image/favicons/brazil-svgrepo-com (2).svg';
+import Eua from '../image/favicons/United-states_flag_icon_round.svg';
 
 function Navbar() {
   const { lightMode, setLightMode } = useContext(MyContext);
@@ -53,7 +53,7 @@ function Navbar() {
             }
         </div>
         <div className="box" onClick={() => {setLanguageMode(languageMode === 'EN' ? 'PT' : 'EN')}}>
-            { languageMode === 'EN' ? <><div className="icon"><img src={Eua} alt="" /></div><div className="textlang">eng</div></> : <><div className="icon"><img src={Brazil} alt="" /></div><div className="textlang">pt</div></> }
+            { languageMode === 'EN' ? <><div className="icon"><img src={Eua} alt="" /></div><div className="textlang">en</div></> : <><div className="icon"><img src={Brazil} alt="" /></div><div className="textlang">pt</div></> }
         </div>
     </nav>
   );
