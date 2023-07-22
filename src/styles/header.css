@@ -2,7 +2,7 @@
   align-items: left;
   top: 0px;
   background: linear-gradient(90deg, #d5c7f0, #d5c7f0d0, #f4eeff);
-  background-image: url(https://www.pixel4k.com/wp-content/uploads/2019/03/beautiful-mountains-landscape-pink-tone_1551644184.jpg.webp);
+  background-image: url('../image/backglight.png');
   /* https://images.pexels.com/photos/7130555/pexels-photo-7130555.jpeg?cs=srgb&dl=pexels-codioful-%28formerly-gradienta%29-7130555.jpg&fm=jpg); */
   background-size: cover;
   background-color: rgb(244, 238, 255);
@@ -13,6 +13,9 @@
   justify-content: space-between;
 }
 
+.dark .backgroundHeader {
+  background-image: url('../image/backg2.png');
+}
 @-webkit-keyframes puff-in-ver {
   0% {
     -webkit-transform: scaleY(2);
@@ -51,6 +54,7 @@
   bottom: 0;
   left: 0;
   right: 0;
+  opacity: 0;
   height: 635px;
   background: linear-gradient(
     0deg,
@@ -114,6 +118,7 @@ nav {
   background: #061320c3;
   filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.115));
 }
+
 
 .dark .navcolor .navegation a {
   color: var(--cor-text-h2-dark);
@@ -199,7 +204,7 @@ nav {
 }
 
 .dark .navegation a {
-  color: var(--cor-text-h2);
+  color: rgba(255, 255, 255, 0.861);
   text-shadow: 1px 1px 1px solid rgba(0, 0, 0, 0.841);
 }
 
@@ -329,10 +334,10 @@ nav {
 }
 
 .sidebar h1 {
-  font-family: Recoleta;
+  font-family: Wix Madefor Display,sans-serif;
   font-size: 5.3em;
   margin-top: 0.1em;
-  font-weight: 800;
+  font-weight: 600;
   color: #1b1d30;
   text-shadow: 1px 1px 1px #1f2136;
   z-index: 1;
@@ -401,7 +406,7 @@ nav {
   margin: 100px 0px 100px 400px;
   animation: rotate 10s cubic-bezier(0.8, 0.2, 0.2, 0.8) alternate infinite;
   border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
-  opacity: 0.9;
+  opacity: 0.5;
 }
 
 .animated-item:nth-child(2n + 2) {
@@ -416,7 +421,7 @@ nav {
   display: inline-block;
   vertical-align: top;
   margin-top: 0px;
-  min-width: 260px;
+  min-width: 500px;
   position: relative;
   text-align: left;
   z-index: 1;

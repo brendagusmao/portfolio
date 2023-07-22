@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React, { useContext, useState } from 'react';
 import MyContext from '../context/MyContext';
 import '../styles/header.css'
 import ToggleMenu from '../components/Togglemenu';
@@ -8,6 +8,7 @@ import ScrollArrow from '../components/Scrolltop';
 
 function Header() {
   const { languageMode } = useContext(MyContext);
+  const [showEngenheira, setShowEngenheira] = useState(false);
   return  ( 
      <header className="container-fluid backgroundHeader" id="home">
       <div className="overlay" />
@@ -16,13 +17,13 @@ function Header() {
        <div className="gradient" />
         <div className="sidebar">
           <h2>
-          {languageMode === 'EN' ? 'Hello, World! i am' : 'Olá, Mundo! Eu sou a'} 
+          {languageMode === 'EN' ? 'Welcome to my portfolio' : 'Bem vindo(a) ao meu portfólio'} 
           </h2>
           <h1>Brenda Gusmão</h1>
-          <h3>{languageMode === 'EN' ? 'developer' : 'desenvolvedora'} 
+          <h3>{/* {languageMode === 'EN' ? 'Developer' : showEngenheira ? 'Engenheira' : 'Desenvolvedora'} */}
             <div className="animated-info">
-               <span className="animated-item">Full Stack</span>
-               <span className="animated-item">Web</span>
+               <span className="animated-item">Desenvolvedora Full Stack</span>
+               <span className="animated-item">Engenheira de Produção</span>
                <span className="animated-item"></span>
             </div>
           </h3>
