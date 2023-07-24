@@ -348,7 +348,7 @@ nav {
 }
 
 .sidebar h2 {
-  font-family: "Mulish", sans-serif;
+  font-family: Montserrat,sans-serif;
   font-size: 1.1em;
   text-transform: none;
   margin-top: -150px;
@@ -358,7 +358,7 @@ nav {
   position: absolute;
   letter-spacing: 0.05em;
   color: var(--cor-text-h1-dark);
-  text-shadow: 1px 1px 1px #1a1a1a;
+  text-shadow: 1px 1px 1px #1a1a1a94;
 }
 
 .sidebar h3 {
@@ -428,7 +428,7 @@ nav {
 }
 
 .animated-item {
-  color: #1b1d30;
+  color: #ffeef9;
   font-size: 25px;
   line-height: inherit;
   display: block;
@@ -436,7 +436,7 @@ nav {
   position: absolute;
   top: 0;
   right: 0;
-  left: 15px;
+  left: 55px;
   animation: BottomTotop 6s linear infinite 0s;
 }
 
@@ -592,6 +592,9 @@ nav {
 .dark .navcolor .textlang {
   color: white;
 }
+.dark .textlang {
+  color: white;
+}
 .scrollTop {
   cursor: pointer;
   position: fixed;
@@ -706,7 +709,7 @@ nav {
     position: absolute;
     top: 0;
     right: 0;
-    left: 1px;
+    left: 51px;
     animation: BottomTotop 6s linear infinite 0s;
   }
   .tgb {

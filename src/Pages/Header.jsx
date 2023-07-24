@@ -17,13 +17,13 @@ function Header() {
        <div className="gradient" />
         <div className="sidebar">
           <h2>
-          {languageMode === 'EN' ? 'Welcome to my portfolio' : 'Bem vindo(a) ao meu portfólio'} 
+          {languageMode === 'EN' ? 'Welcome to my portfólio' : 'Bem vindo(a) ao meu portfólio'} 
           </h2>
           <h1>Brenda Gusmão</h1>
           <h3>{/* {languageMode === 'EN' ? 'Developer' : showEngenheira ? 'Engenheira' : 'Desenvolvedora'} */}
             <div className="animated-info">
-               <span className="animated-item">Desenvolvedora Full Stack</span>
-               <span className="animated-item">Engenheira de Produção</span>
+               <span className="animated-item">{languageMode === 'EN' ? 'Developer Full Stack' : 'Desenvolvedora Full Stack'}</span>
+               <span className="animated-item">{languageMode === 'EN' ? 'Production Engineer' : 'Engenheira de Produção'}</span>
                <span className="animated-item"></span>
             </div>
           </h3>

@@ -11,7 +11,6 @@ class Redes extends React.Component {
         <div className="redes">
           <a href="https://www.linkedin.com/in/brendapereiragusmao/" target="_blank" rel="noreferrer" > <ImLinkedin /></a>
           <a href="https://github.com/brendagusmao" target="_blank" rel="noreferrer" > <FaGithubSquare /></a>
-          <a href="https://www.instagram.com/brendapgusmao/" target="_blank" rel="noreferrer" > <GrInstagram /></a>
         </div>
     );
   }
